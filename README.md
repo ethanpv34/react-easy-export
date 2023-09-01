@@ -48,13 +48,13 @@ Exports data as a PDF file using the browser's print functionality.\
 `
 import { exportToPDF } from 'react-export-ease';
 
-const content = `
+const content = 
   <h1>Users</h1>
   <ul>
     <li>Ethan: 03112003</li>
     <li>Jane: 01011999</li>
   </ul>
-`;
+;
 
 exportToPDF(content, 'users.pdf');
 `
