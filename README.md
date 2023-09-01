@@ -1,7 +1,7 @@
 # Getting Started with react-easy-export
 
-### `npm install react-easy-export`
-### `yard add react-easy-export`
+`npm install react-easy-export` or\
+`yard add react-easy-export`
 
 ## Available Scripts
 
