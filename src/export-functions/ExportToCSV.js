@@ -59,7 +59,4 @@ const exportToCSV = (data, filename = 'data.csv', separator = ',') => {
     URL.revokeObjectURL(url);
 };
 
-// Example usages:
-// exportToCSV([{name: 'Ethan', dob: '03112003'}, {name: 'Jane', dob: '01011999'}], 'people_objects.csv');
-// exportToCSV([['Ethan', '03112003'], ['Jane', '01011999']], 'people_array.csv');
 export default exportToCSV;

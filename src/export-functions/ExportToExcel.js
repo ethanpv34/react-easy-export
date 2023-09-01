@@ -55,7 +55,4 @@ const exportToExcel = (data, filename = 'data.xls') => {
     document.body.removeChild(link);
 };
 
-// Example usages:
-// exportToExcel([{name: 'Ethan', dob: '03112003'}, {name: 'Jane', dob: '01011999'}], 'people_objects.xls');
-// exportToExcel([['Ethan', '03112003'], ['Jane', '01011999']], 'people_array.xls');
 export default exportToExcel;
