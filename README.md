@@ -1,41 +1,62 @@
 # Getting Started with react-easy-export
 
-`npm install react-easy-export` or\
+`npm install react-easy-export`
+or\
 `yard add react-easy-export`
 
-## Available Scripts
+# Usage
+# CSV
+Exports data as a CSV file.\
+@param {Array<Object> | Array<Array<any>>} data - Array of objects or 2D array representing data.\
+@param {string} filename - The name of the exported file.\
+@param {string} [separator=','] - Separator used between values.
+# Example
+`import { exportToCSV } from 'react-export-ease';
 
-In the project directory, you can run:
+const data = [
+  { name: "Ethan", dob: "03112003" },
+  { name: "Jane", dob: "01011999" }
+];
 
-### `npm start`
+exportToCSV(data, 'users.csv');`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Excel
+Exports data as an Excel (.xls) file.\
+@param {Array<Object> | Array<Array<any>>} data - The data to be exported. Can be an array of objects or a 2D array.\
+@param {string} [filename='data.xls'] - Optional. The desired filename of the exported file.\
+Note: This method generates an older Excel format (.xls) using an HTML table. It may not support advanced Excel features.
+# Example
+import { exportToExcel } from 'react-export-ease';
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+const data = [
+  ["Name", "DOB"],
+  ["Ethan", "03112003"],
+  ["Jane", "01011999"]
+];
 
-### `npm test`
+exportToExcel(data, 'users.xlsx');
 
-Launches the Jest testing suite.
+# PDF
+Exports data as a PDF file using the browser's print functionality.\
+@param {string} content - The HTML content to be printed to PDF.\
+@param {string} [filename='data.pdf'] - Suggested name of the exported file (though this can't be enforced through the print dialog).
+# Example
+`import { exportToPDF } from 'react-export-ease';
 
-### `npm run build`
+const content = `
+  <h1>Users</h1>
+  <ul>
+    <li>Ethan: 03112003</li>
+    <li>Jane: 01011999</li>
+  </ul>
+`;
 
-Builds the app for production to the `dist` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+exportToPDF(content, 'users.pdf');`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Contributing
+We welcome contributions! Please open an issue or submit a pull request if you would like to help improve react-export-ease.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# License
+MIT\
+See LICENSE.md
 
