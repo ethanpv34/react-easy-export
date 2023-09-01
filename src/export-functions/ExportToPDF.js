@@ -23,5 +23,5 @@ const exportToPDF = (content, filename = 'data.pdf') => {
 };
 
 // Example usage:
-// exportToPDF('<h1>Hello, World!</h1>', 'hello.pdf');
+// exportToPDF('<h1>Hello world!</h1>', 'hello.pdf');
 export default exportToPDF;
