@@ -21,7 +21,7 @@ const data = [
 
 exportToCSV(data, 'users.csv');
 // Alternatively:
-exportToCSV(content);
+exportToCSV(data);
 ```
 
 # Excel
@@ -41,7 +41,7 @@ const data = [
 
 exportToExcel(data, 'users.xlsx');
 // Alternatively:
-exportToExcel(content);
+exportToExcel(data);
 ```
 
 # PDF
