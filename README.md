@@ -60,7 +60,7 @@ exportToPDF(content, 'users.pdf');
 ```
 
 # Contributing
-We welcome contributions! Please open an issue or submit a pull request if you would like to help improve react-export-ease.
+We welcome contributions! Please open an issue or submit a pull request if you would like to help improve react-easy-export.
 
 # License
 MIT\
