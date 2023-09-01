@@ -1,6 +1,6 @@
 {
   "name": "react-easy-export",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React library for easily exporting data to CSV, PDF, and Excel formats.",
   "main": "dist/react-easy-export.js",
   "module": "dist/react-easy-export.js",
